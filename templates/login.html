@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>লগইন — ট্রেন্ড অ্যাসিস্ট্যান্ট</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="login-box">
+    <h1>🔒 লগইন</h1>
+    {% if error %}<p class="login-error">{{ error }}</p>{% endif %}
+    <form method="post">
+      <input type="password" name="password" placeholder="পাসওয়ার্ড দাও" autofocus required>
+      <button type="submit">ঢোকো</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ট্রেন্ড অ্যাসিস্ট্যান্ট</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>📈 ট্রেন্ড অ্যাসিস্ট্যান্ট</h1>
+      <div class="niche-box">
+        <label for="niche-input">তোমার niche:</label>
+        <input id="niche-input" type="text" value="{{ niche }}" placeholder="যেমন: রান্না ও রেসিপি">
+      </div>
+    </header>
+
+    <section class="trends-panel">
+      <div class="trends-panel-header">
+        <h2>সবশেষ ট্রেন্ড সাজেশন</h2>
+        <button id="refresh-trends-btn">এখনই চেক করো 🔍</button>
+      </div>
+      <div id="trends-meta" class="trends-meta"></div>
+      <div id="trends-content" class="trends-content">এখনও কোনো ট্রেন্ড চেক করা হয়নি — উপরের বাটনে চাপো।</div>
+    </section>
+
+    <section class="chat-panel">
+      <div id="chat-log" class="chat-log">
+        <div class="msg msg-model">
+          হাই! 👋 আমি তোমার ট্রেন্ড রিসার্চ অ্যাসিস্ট্যান্ট। আমাকে জিজ্ঞেস করতে পারো
+          "আজকে কী ট্রেন্ডিং চলছে?" বা যেকোনো ভিডিও আইডিয়া নিয়ে কথা বলতে পারো।
+        </div>
+      </div>
+      <form id="chat-form" class="chat-form">
+        <input id="chat-input" type="text" placeholder="এখানে লেখো..." autocomplete="off" required>
+        <button type="submit">পাঠাও</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
