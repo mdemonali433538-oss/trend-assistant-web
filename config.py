@@ -17,7 +17,7 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY")
 YOUTUBE_REGION_CODE = os.environ.get("YOUTUBE_REGION_CODE", "BD")
 TREND_CHECK_INTERVAL_HOURS = float(os.environ.get("TREND_CHECK_INTERVAL_HOURS", "6"))
 CONTENT_NICHE = os.environ.get("CONTENT_NICHE", "general")
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
 
 # তোমার পেজটা যদি পাবলিক ইন্টারনেটে খোলা থাকে, চাইলে একটা সিম্পল পাসওয়ার্ড
 # দিয়ে প্রোটেক্ট করতে পারো। সেট না করলে সবাই তোমার পেজ খুলতে পারবে।
